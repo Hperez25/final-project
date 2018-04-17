@@ -1,75 +1,128 @@
 
-body {
-  counter-reset: section;
+.topbar-responsive {
+  background: #1e0674;
+  padding: 1rem 1.5rem;
 }
 
-.breadcrumb-counter-nav {
-  margin: 0;
-  padding: 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  list-style: none;
-  background: #2C3E50;
-}
-
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item {
-  position: relative;
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  padding: 1rem 2rem;
-  text-align: center;
+.topbar-responsive .topbar-responsive-logo {
+  color: #fefefe;
   vertical-align: middle;
-  cursor: pointer;
 }
 
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item:hover {
-  background: #1a252f;
+.topbar-responsive .menu {
+  background: #1e0674;
 }
 
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item::before {
-  counter-increment: section;
-  content: counter(section);
-  position: relative;
-  background: #507192;
-  color: #fff;
-  right: 0.8rem;
-  border-radius: 50%;
-  padding: 0.2em 0.55em;
+.topbar-responsive .menu li:last-of-type {
+  margin-right: 0;
 }
 
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item.current {
-  background: #1a252f;
+.topbar-responsive .menu a {
+  color: #fefefe;
+  transition: color 0.15s ease-in;
 }
 
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item.current::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -1rem;
-  width: 0;
-  height: 0;
-  border-top: 1.75rem solid transparent;
-  border-bottom: 1.75rem solid transparent;
-  border-left: 1rem solid #1a252f;
-  z-index: 300;
+.topbar-responsive .menu a:hover {
+  color: #c6d1d8;
 }
 
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item.current::before {
-  background-color: #88a4bf;
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive .menu a {
+    padding: 0.875rem 0;
+  }
 }
 
-.breadcrumb-counter-nav .breadcrumb-counter-nav-item a {
-  color: #fff;
-  font-size: 0.875rem;
+.topbar-responsive .menu .topbar-responsive-button {
+  color: #fefefe;
+  border-color: #fefefe;
+  border-radius: 5000px;
+  transition: color 0.15s ease-in, border-color 0.15s ease-in;
 }
 
-@media only screen and (max-width: 52em) {
-  .breadcrumb-counter-nav {
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+.topbar-responsive .menu .topbar-responsive-button:hover {
+  color: #c6d1d8;
+  border-color: #c6d1d8;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive .menu .topbar-responsive-button {
+    width: 100%;
+    margin: 0.875rem 0;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive {
+    padding: 0.75rem;
+  }
+  .topbar-responsive .top-bar-title {
+    position: relative;
+    width: 100%;
+  }
+  .topbar-responsive .top-bar-title span {
+    position: absolute;
+    right: 0;
+    border: 1px solid #fefefe;
+    border-radius: 5px;
+    padding: 0.25rem 0.45rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .topbar-responsive .top-bar-title span .menu-icon {
+    margin-bottom: 4px;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .topbar-responsive-links {
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    width: 100%;
+    -webkit-animation: fadeIn 1s ease-in;
+            animation: fadeIn 1s ease-in;
   }
 }
