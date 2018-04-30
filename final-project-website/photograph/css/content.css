@@ -44,7 +44,7 @@
   -webkit-align-self: stretch;
       -ms-flex-item-align: stretch;
           align-self: stretch;
-  background: #e6e6e6;
+  background: #206040;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -69,9 +69,19 @@
 }
 
 .marketing-site-content-section-block-header {
-  font-size: 24px;
+  font-size: 45px;
 }
 
 .marketing-site-content-section-block-subheader {
-  font-size: 13px;
+  font-size: 22px;
+}
+h3{
+  font-family: garamond;
+  font-weight: bolder;
+  font-style:oblique;
+}
+p{
+  font-family: garamond;
+  font-weight: lighter;
+  color: red;
 }
