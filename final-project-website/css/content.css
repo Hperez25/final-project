@@ -80,7 +80,9 @@ h3{
   font-weight: bolder;
   font-style:oblique;
 }
-p{
+p1{
   font-family: garamond;
   font-weight: lighter;
+  font-style: oblique;
+  color: red;
 }
