@@ -19,3 +19,13 @@
   color: #ff5912;
   text-shadow: 2px 2px 6px #ffb300;
 }
+h1{
+  font-family: garamond;
+  font-style:oblique;
+  font-size: 54px
+}
+h5{
+  font-family: garamond;
+  font-style:oblique;
+  font-size: 34px
+}
